@@ -11,6 +11,10 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 15vw 70vw 15vw;
+    grid-template-areas:
+    "h h h"
+    "m c c"
+    "f f f";
 }
 
 header, nav, article, footer{
@@ -25,20 +29,18 @@ header, nav, article, footer{
 
 header{
     background-color: darkmagenta;
-    grid-column: span 3;
+    grid-area: h;
 }
 
 nav{
     background-color: aqua;
-    grid-column: span 1;
+    grid-area: m;
 }
 
 article{
     background-color: pink;
-    grid-column: span 2;
 }
 
 footer{
     background-color:plum;
-    grid-column: span 3;
 }
